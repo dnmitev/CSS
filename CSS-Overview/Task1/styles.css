@@ -1,0 +1,36 @@
+﻿body {
+    background-color: #595959;
+    font-family: Arial;
+}
+
+thead {
+    color: #AFB1A4;
+    font-size: larger;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #C3A86F;
+}
+
+span.alert {
+    color: red;
+    font-weight: bolder;
+}
+
+.other {
+    color: #A1A8AD;
+}
+
+.status {
+    color: #D59D00;
+}
+
+.info {
+    font-weight: bold;
+    font-style: italic;
+    color: #F1F4F5;
+    float: left;
+}
