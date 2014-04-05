@@ -1,0 +1,32 @@
+﻿ul, ul a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#main-menu, .sub-menu {
+    margin: 0;
+    padding: 0;
+}
+
+    #main-menu a {
+        display: block;
+        width: 150px;
+        color: black;
+    }
+
+    #main-menu > li > a:hover {
+        text-decoration: underline;
+    }
+
+    #main-menu .sub a {
+        color: gray;
+    }
+
+    #main-menu li:hover ul {
+        display: block;
+    }
+
+.sub-menu {
+    margin-left: 20px;
+    display: none;
+}

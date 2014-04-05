@@ -1,0 +1,49 @@
+﻿ul, li, button, input {
+    margin: 0px;
+    padding: 0px;
+}
+
+label {
+    display: block;
+}
+
+label, button:not(:disabled) {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    vertical-align: top;
+}
+
+
+.unstyled {
+    list-style-type: none;
+}
+
+.inline{
+    overflow: hidden;
+}
+
+.inline li{
+    float: left;
+    list-style:none;
+}
+
+/* Calculator Background color gradient */
+.calculator {
+    margin: 0 auto;
+    padding: 0 10px 5px;
+    border: 1px solid #999;
+    background: -webkit-linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    background: -moz-linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    background: -o-linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    background: linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+}
+
+    .calculator .unstyled {
+        padding: 3px 0 0;
+    }
+
+        .calculator .unstyled li + li {
+            margin-top: 6px;
+        }
