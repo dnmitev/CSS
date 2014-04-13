@@ -56,20 +56,20 @@ article {
     border-bottom-right-radius: 15px;
 }
 
-article h1{
-    color: yellow;
-    font-weight: normal;
-}
+    article h1 {
+        color: yellow;
+        font-weight: normal;
+    }
 
-article p{
-    color: lightgray;
-}
+    article p {
+        color: lightgray;
+    }
 
-.styled{
+.styled {
     color: white;
 }
 
-p a{
+p a {
     text-decoration: none;
     color: inherit;
 }
