@@ -1,9 +1,52 @@
 ﻿body {
-  font: 14px/1.2 Consolas, Arial;
-  color: green;
-  text-align: justify;
+  font: 14px/1.2 Times New Roman, Consolas, Arial;
 }
-body div {
-  background: yellow;
+a {
+  color: black;
+}
+aside {
+  float: left;
+  width: 125px;
+}
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+aside ul a {
+  text-decoration: none;
+}
+aside .home-nav li:first-of-type {
+  font-weight: bold;
+}
+#left h1 {
+  font-size: 1.1em;
+}
+#main-header {
+  font-size: 1.8em;
+}
+#main-section {
+  border: 1px solid grey;
+  width: 500px;
+  float: left;
+  padding: 5px;
+  margin: 2px;
+}
+#page-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #999999;
+}
+#page-nav li {
+  display: inline-block;
+  border: 1px solid black;
+  width: 100px;
+}
+#page-nav li:last-of-type {
+  text-align: right;
+}
+#page-nav li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=Less1.css.map */

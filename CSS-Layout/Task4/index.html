@@ -4,11 +4,15 @@
     <meta charset="utf-8" />
     <title>CSS Tutorial</title>
     <link rel="stylesheet/less" type="text/css" href="less1.less" />
-    <script src="less.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+    <!--<script src="less.js"></script>-->
 </head>
 <body>
     <div id="wrapper">
-        <aside id="left">
+        <aside id="left" class="clear-fix">
+            <header>
+                <h1>HOME</h1>
+            </header>
             <nav id="home-nav">
                 <ul class="home-nav basic">
                     <li>
@@ -132,7 +136,7 @@
             </nav>
         </aside>
 
-        <section id="main-section">
+        <section id="main-section" class="clear-fix">
             <header>
                 <h1 id="main-header">CSS Tutorial</h1>
                 <nav>
@@ -199,7 +203,7 @@
             </article>
         </section>
 
-        <aside id="rigth">
+        <aside id="rigth" class="clear-fix">
             <div id="site-search">
                 <header>
                     <h1 class="main-section-heads">SITE SEARCH</h1>
