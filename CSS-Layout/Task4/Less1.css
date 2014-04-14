@@ -1,4 +1,9 @@
-body {
+﻿body {
   font: 14px/1.2 Consolas, Arial;
   color: green;
+  text-align: justify;
 }
+body div {
+  background: yellow;
+}
+/*# sourceMappingURL=Less1.css.map */
