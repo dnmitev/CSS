@@ -1,0 +1,70 @@
+﻿body {
+  font: 18px/1.2 Corbel, Calibri, Arial;
+  width: 700px;
+}
+.nav {
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+.nav li {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-right: 2px;
+  margin-bottom: 10px;
+}
+.nav li:last-of-type {
+  margin-left: 0;
+}
+.nav li a {
+  color: #0EB1EF;
+}
+img {
+  float: left;
+}
+fieldset {
+  width: 200px;
+  display: inline-block;
+  text-align: right;
+  padding: 2px;
+  margin: 2px;
+}
+fieldset legend {
+  text-align: center;
+  font-weight: bold;
+}
+fieldset p {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+aside {
+  text-align: center;
+  vertical-align: central;
+  margin: auto;
+  padding-top: 75px;
+}
+aside label {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+#main {
+  border: 1px solid black;
+}
+section {
+  float: left;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*# sourceMappingURL=StyleSheet.css.map */

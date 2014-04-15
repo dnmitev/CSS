@@ -3,15 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>CSS Tutorial</title>
-    <link rel="stylesheet/less" type="text/css" href="less1.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
-    <!--<script src="less.js"></script>-->
+    <link href="Less1.css" rel="stylesheet" />
 </head>
 <body>
     <div id="wrapper">
         <aside id="left" class="clear-fix">
             <header>
-                <h1>HOME</h1>
+                <h1 id="home">HOME</h1>
             </header>
             <nav id="home-nav">
                 <ul class="home-nav basic">
@@ -201,6 +199,19 @@
                     <a href="#">Start CSS Quiz!</a>
                 </p>
             </article>
+
+            <footer>
+                <nav>
+                    <ul id="page-nav">
+                        <li>
+                            <a href="#">&#9664;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Previous</a>
+                        </li>
+                        <li>
+                            <a href="#">Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9654;</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
         </section>
 
         <aside id="rigth" class="clear-fix">
@@ -221,7 +232,7 @@
             </div>
 
             <div>
-                <button>25+ Styles!</button>
+                <button class="styled-button">25+ Styles!</button>
                 <p>
                     <a href="#">Dynamic button image generation</a>
                 </p>
