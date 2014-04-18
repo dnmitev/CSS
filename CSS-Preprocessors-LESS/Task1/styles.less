@@ -1,3 +1,29 @@
+.clearfix, body header div#header-container, body header nav, body header nav ul, body header nav ul li ul.sub-nav-list, body section, body aside {
+    zoom: 1;
+
+
+    .clearfix:after, body header div#header-container:after, body header nav:after, body header nav ul:after, body header nav ul li ul.sub-nav-list:after, body section:after, body aside:after, .clearfix:before, body header div#header-container:before, body header nav:before, body header nav ul:before, body header nav ul li ul.sub-nav-list:before, body section:before, body aside:before {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .clearfix:after, body header div#header-container:after, body header nav:after, body header nav ul:after, body header nav ul li ul.sub-nav-list:after, body section:after, body aside:after {
+        clear: both;
+    }
+}
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside {
+    display: block;
+}
+
 body {
     font: 14px Arial;
     color: white;
@@ -15,6 +41,7 @@ body {
 
 #header-container {
     display: block;
+    margin: 20px;
 }
 
 #logo-container {
@@ -23,9 +50,9 @@ body {
 
 #reg-form-container {
     display: inline-block;
-    position: absolute;
-    top: 30px;
-    right: 100px;
+    position: relative;
+    top: 0;
+    left: 50%;
     /*I am not sure at all if absolute position is the most suitable for this but I couldn't make it smarter in the moment. Please if there is a wiser way to do that trick write it in my HW feedback*/
     input {
         background: #B35EF3;
@@ -40,7 +67,13 @@ body {
         background: #B35EF3;
         padding: 5px 10px;
         border-radius: 10px;
+        border: 1px solid;
         border-color: #C0AFCE #3C2051 #3C2051 #C0AFCE;
+
+        &:hover {
+            background-color: #8949B9;
+            border-style: inset;
+        }
     }
 }
 
@@ -56,17 +89,132 @@ body {
 }
 
 #main-nav-list {
-    border: 1px solid black;
-    border-radius: 25px;
+    border: 2px solid black;
+    border-radius: 15px;
     padding: 10px;
+    margin-left: 35px;
+    width: 75%;
 
     .sub-nav-list {
         position: absolute;
         display: none;
         background-color: rgba(179, 94, 243, 0.9);
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+
+        & > li {
+            border-bottom: 1px solid black;
+            margin: 0 15px;
+            padding: 10px 0;
+            font-size: 0.8em;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
     }
 
     li {
         display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        &:hover {
+            a + ul {
+                display: block;
+
+                li {
+                    display: block;
+                }
+            }
+
+            & > a {
+                color: #A8A8A8;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+section {
+    float: left;
+    width: 75%;
+
+    article {
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px;
+
+        header > h1 {
+            margin: 5px;
+        }
+
+        footer {
+            text-align: right;
+
+            & a {
+                text-decoration: none;
+                color: #D4A3F7;
+            }
+        }
+    }
+}
+
+aside {
+    float: left;
+    width: 20%;
+
+    ul {
+        list-style-type: none;
+
+        a, em, strong {
+            color: #D4A3F7;
+            text-decoration: none;
+        }
+    }
+
+    & > ul > li {
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 15px 0;
+        padding: 15px;
+
+        ul li {
+            background: url("images/li-dot.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
+            margin: 5px 0 0 10px;
+            padding-left: 25px;
+        }
+    }
+
+    zoom: 1;
+
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+p {
+    margin: 10px 0;
+}
+
+body > footer {
+    text-align: center;
+    zoom: 1;
+
+    p {
+        font: 1.3em bold;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
     }
 }

@@ -1,0 +1,34 @@
+﻿body {
+  margin: 0;
+  width: 95%;
+}
+#main-nav-list {
+  list-style-type: none;
+  text-align: center;
+}
+#main-nav-list li {
+  display: inline-block;
+  margin: 5px;
+}
+#main-nav-list li:hover {
+  opacity: 0.5;
+  zoom: 1;
+  filter: alpha(opacity=50);
+}
+#main-nav-list li img {
+  width: 150px;
+  height: 125px;
+}
+#enlarged-picture input[type="radio"] {
+  display: none;
+}
+#enlarged-picture .image {
+  display: none;
+}
+#enlarged-picture input:checked + .image {
+  display: block;
+  width: 640px;
+  height: 480px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */
