@@ -1,0 +1,137 @@
+@mixin linear-gradient( $top-color,$top-pos, $bottom-color, $bottom-pos ) {
+    background: $top-color;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMmQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2QxZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, $top-color $top-pos, $bottom-color $bottom-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($top-pos,$top-color), color-stop($bottom-pos,$bottom-color));
+    background: -webkit-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: -o-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: -ms-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: linear-gradient(to bottom, $top-color $top-pos,$bottom-color $bottom-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
+}
+
+@mixin clearfix {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+html,
+li,
+body,
+ul,
+div,
+span,
+p,
+h1,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #555555;
+    font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    font-size: 16px;
+}
+
+#wrapper {
+    width: 960px;
+
+    div {
+        @include linear-gradient(#ECECEC,0,#A4A4A4,100%);
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 5px 15px;
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 350px;
+
+        h1 {
+            margin: 10px auto;
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .messages-list {
+            list-style-type: none;
+            @include clearfix;
+
+            li {
+                border: 1px solid black;
+                border-radius: 15px;
+                width: 200px;
+                margin-bottom: 5px;
+                padding: 5px 15px;
+
+                &.me-item {
+                    float: right;
+                    text-align: right;
+                    @include linear-gradient(#28edff,0,#c1faff,100%);
+
+                    span:first-of-type {
+                        text-align: left;
+                    }
+                }
+
+                &.toshko-item {
+                    float: left;
+                    text-align: left;
+                    @include linear-gradient(#dfffd3,0,#6fff3a,100%);
+
+                    span:first-of-type {
+                        text-align: right;
+                    }
+                }
+
+                span {
+                    display: block;
+
+                    &:not(.date) {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                    }
+
+                    &.date {
+                        font-size: 0.8em;
+                        font-weight: normal;
+                        font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+
+        input {
+            border: none;
+            border-radius: 5px;
+            background: #EEEEEE;
+            display: block;
+            padding: 5px 15px;
+            color: #555555;
+            width: 70%;
+        }
+
+        button {
+            @include linear-gradient(#eee,0,#aaa,100%);
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            float: right;
+            margin-top: -30px;
+
+            &:hover {
+                background: #eee;
+            }
+        }
+    }
+}

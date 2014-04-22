@@ -1,0 +1,99 @@
+@mixin linear-gradient( $top-color,$top-pos, $bottom-color, $bottom-pos ) {
+    background: $top-color;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMmQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2QxZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, $top-color $top-pos, $bottom-color $bottom-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($top-pos,$top-color), color-stop($bottom-pos,$bottom-color));
+    background: -webkit-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: -o-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: -ms-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: linear-gradient(to bottom, $top-color $top-pos,$bottom-color $bottom-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
+}
+
+@mixin clearfix {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+html,
+body,
+div,
+form,
+fieldset,
+input,
+button,
+label,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-seri;
+    font-size: 16px;
+}
+
+#wrapper {
+    width: 960px;
+
+    form {
+        @include linear-gradient(#67D0FE,0,#89F9F6,100%);
+        border: 1px solid #393534;
+        border-radius: 15px;
+        margin-top: 25px;
+        margin-left: 25px;
+        width: 380px;
+        padding: 15px;
+        text-align: right;
+
+        fieldset {
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 5px 15px;
+
+            legend {
+                font-size: 1.3em;
+                font-style: italic;
+                padding: 0 15px;
+            }
+
+            input {
+                @include linear-gradient(#69D2FF,0,#8BFEFB,100%);
+                padding: 5px 15px;
+                border: 1px solid #008FCE;
+                border-radius: 5px;
+
+                &[type=number] {
+                    width: 35px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        button, input[type=reset] {
+            @include linear-gradient(#41C9FE,0,#89F9F6,100%);
+            padding: 5px 15px;
+            margin-top: 15px;
+            font-size: 1.2em;
+            display: inline-block;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid black;
+
+            &:hover {
+                background: #9BE1FF;
+            }
+        }
+    }
+}

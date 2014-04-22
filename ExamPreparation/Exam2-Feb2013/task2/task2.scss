@@ -27,113 +27,90 @@ div,
 ul,
 li,
 a,
-table,
-thead,
-tbody,
-tr,
-th,
-td {
+img,
+span {
     margin: 0;
     padding: 0;
 }
 
-table {
-    border-collapse: collapse;
+a {
+    text-decoration: none;
+    color: #777777;
 }
 
 body {
-    font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
     font-size: 16px;
-    color: black;
 }
 
-div#wrapper {
+#wrapper {
     width: 960px;
 
-    .tab-strip {
-        margin-left: 15px;
-        margin-top: 15px;
-        display: inline-block;
-        list-style-type: none;
+    .notification-list {
+        width: 470px;
+        margin-top: 25px;
+        margin-left: 25px;
         border: 1px solid black;
-        position: relative;
-        height: 230px;
-        width: 345px;
-        border-radius: 5px;
+        border-bottom: none;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        list-style-type: none;
+        display: inline-block;
+        @include linear-gradient(#Aaaaaa,0%,#DDDDDD,80%);
 
         & > li {
             display: inline-block;
             border-right: 1px solid black;
             border-bottom: 1px solid black;
             padding: 5px 15px;
-            border-radius: 5px;
-            @include linear-gradient(#eeeeee,0,#aaaaaa,100%);
-
-            &.current {
-                background: none;
-                border-bottom: none;
-                border-radius: 0;
-
-                .tab-btn {
-                    font-weight: bold;
-                }
-
-                .tab-content {
-                    display: block;
-                }
-            }
+            height: 20px;
 
             &:last-of-type {
                 border-right: none;
             }
 
             &:hover {
-                background: #eeeeee;
+                border-bottom: none;
             }
 
-            .tab-btn {
-                color: #000000;
-                text-decoration: none;
-                font-size: 1.4em;
+            &:hover div.content {
+                display: block;
             }
 
-            .tab-content {
+            & > a {
+                font-size: 1.2em;
+            }
+
+            img {
+                width: 15px;
+            }
+
+            div.content {
+                width: 470px;
+                margin-top: 5px;
                 display: none;
                 position: absolute;
-                top: 35px;
-                left: 15px;
-                width: 330px;
-                height: 80%;
-                padding: 5px;
-                padding-top: 15px;
+                left: 25px;
+                border: 1px solid black;
+                border-top: none;
+                @include linear-gradient(#dddddd,30%, #cccccc,100%);
 
-                & > ul {
-                    list-style-type: disc;
+                ul li {
+                    display: block;
 
-                    li ul {
-                        margin-left: 25px;
-                        list-style-type: lower-alpha;
-                    }
-                }
+                    a {
+                        color: #777777;
 
-                & > table {
-                    border: 1px solid black;
-
-                    thead {
-                        @include linear-gradient(#aaaaaa,0%,#eeeeee,75%);
-
-                        th {
-                            border: 1px solid black;
-                            padding: 5px 15px;
+                        img {
+                            margin: 0 5px 0 15px;
                         }
-                    }
 
-                    tbody {
-                        background: #eeeeee;
+                        strong {
+                            color: #5e5e5e;
+                        }
 
-                        td {
-                            border: 1px solid black;
-                            padding: 5px 15px;
+                        &:hover {
+                            text-decoration: underline;
                         }
                     }
                 }

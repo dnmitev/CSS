@@ -1,0 +1,84 @@
+html,
+body,
+div,
+ul,
+li,
+a,
+img,
+span {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #777777; }
+
+body {
+  font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+  font-size: 16px; }
+
+#wrapper {
+  width: 960px; }
+  #wrapper .notification-list {
+    width: 470px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    list-style-type: none;
+    display: inline-block;
+    background: #aaaaaa;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMmQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2QxZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aaaaaa), color-stop(80%, #dddddd));
+    background: -webkit-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: -o-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: -ms-linear-gradient(top, #aaaaaa 0%, #dddddd 80%);
+    background: linear-gradient(to bottom, #aaaaaa 0%, #dddddd 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 ); }
+    #wrapper .notification-list > li {
+      display: inline-block;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 5px 15px;
+      height: 20px; }
+      #wrapper .notification-list > li:last-of-type {
+        border-right: none; }
+      #wrapper .notification-list > li:hover {
+        border-bottom: none; }
+      #wrapper .notification-list > li:hover div.content {
+        display: block; }
+      #wrapper .notification-list > li > a {
+        font-size: 1.2em; }
+      #wrapper .notification-list > li img {
+        width: 15px; }
+      #wrapper .notification-list > li div.content {
+        width: 470px;
+        margin-top: 5px;
+        display: none;
+        position: absolute;
+        left: 25px;
+        border: 1px solid black;
+        border-top: none;
+        background: #dddddd;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMmQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2QxZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #dddddd), color-stop(100%, #cccccc));
+        background: -webkit-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: -o-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: -ms-linear-gradient(top, #dddddd 30%, #cccccc 100%);
+        background: linear-gradient(to bottom, #dddddd 30%, #cccccc 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 ); }
+        #wrapper .notification-list > li div.content ul li {
+          display: block; }
+          #wrapper .notification-list > li div.content ul li a {
+            color: #777777; }
+            #wrapper .notification-list > li div.content ul li a img {
+              margin: 0 5px 0 15px; }
+            #wrapper .notification-list > li div.content ul li a strong {
+              color: #5e5e5e; }
+            #wrapper .notification-list > li div.content ul li a:hover {
+              text-decoration: underline; }
+
