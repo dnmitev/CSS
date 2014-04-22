@@ -1,0 +1,94 @@
+html,
+body,
+div,
+p,
+a,
+input,
+span,
+img,
+ul,
+li,
+fieldset,
+button,
+input,
+select,
+option,
+textarea {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+}
+
+#wrapper {
+    width: 960px;
+
+    aside {
+        margin-left: 20px;
+        margin-top: 10px;
+        display: inline-block;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        background: #ce9aff;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NlOWFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEzJSIgc3RvcC1jb2xvcj0iI2M5OTVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE1JSIgc3RvcC1jb2xvcj0iI2NiOTFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2M2OTNmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE5JSIgc3RvcC1jb2xvcj0iI2MwOTRmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI2JSIgc3RvcC1jb2xvcj0iI2MwOTJmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI2JSIgc3RvcC1jb2xvcj0iI2JkOTFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iI2JhOGVmZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iI2JkOGRmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2I2OGVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2IzOGFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2FkOGFmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2IyODZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2FiODhmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2E5ODVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2E1ODVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iI2E1ODVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iI2EzODNmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY0JSIgc3RvcC1jb2xvcj0iI2EzODNmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY2JSIgc3RvcC1jb2xvcj0iI2E5ODFmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzlkODVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY4JSIgc3RvcC1jb2xvcj0iIzlkODNmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2E2N2VmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcxJSIgc3RvcC1jb2xvcj0iI2E2N2VmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcyJSIgc3RvcC1jb2xvcj0iIzllODFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc4JSIgc3RvcC1jb2xvcj0iIzliN2VmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iIzk3ODFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgyJSIgc3RvcC1jb2xvcj0iIzliN2JmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iIzlhN2FmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iIzkzN2NmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iIzhlN2FmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iIzhhNzlmZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4YTc4ZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, #ce9aff 0%, #c995ff 13%, #cb91ff 15%, #c693fa 17%, #c094ff 19%, #c092ff 26%, #bd91ff 26%, #ba8efd 32%, #bd8dff 33%, #b68eff 37%, #b38aff 45%, #ad8afe 47%, #b286ff 51%, #ab88ff 53%, #a985ff 58%, #a585ff 59%, #a585ff 62%, #a383fe 62%, #a383fe 64%, #a981fe 66%, #9d85ff 67%, #9d83ff 68%, #a67eff 70%, #a67eff 71%, #9e81ff 72%, #9b7efe 78%, #9781ff 79%, #9b7bff 82%, #9a7aff 84%, #937cff 85%, #8e7aff 95%, #8a79fd 97%, #8a78ff 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce9aff), color-stop(13%,#c995ff), color-stop(15%,#cb91ff), color-stop(17%,#c693fa), color-stop(19%,#c094ff), color-stop(26%,#c092ff), color-stop(26%,#bd91ff), color-stop(32%,#ba8efd), color-stop(33%,#bd8dff), color-stop(37%,#b68eff), color-stop(45%,#b38aff), color-stop(47%,#ad8afe), color-stop(51%,#b286ff), color-stop(53%,#ab88ff), color-stop(58%,#a985ff), color-stop(59%,#a585ff), color-stop(62%,#a585ff), color-stop(62%,#a383fe), color-stop(64%,#a383fe), color-stop(66%,#a981fe), color-stop(67%,#9d85ff), color-stop(68%,#9d83ff), color-stop(70%,#a67eff), color-stop(71%,#a67eff), color-stop(72%,#9e81ff), color-stop(78%,#9b7efe), color-stop(79%,#9781ff), color-stop(82%,#9b7bff), color-stop(84%,#9a7aff), color-stop(85%,#937cff), color-stop(95%,#8e7aff), color-stop(97%,#8a79fd), color-stop(100%,#8a78ff));
+        background: -webkit-linear-gradient(top, #ce9aff 0%,#c995ff 13%,#cb91ff 15%,#c693fa 17%,#c094ff 19%,#c092ff 26%,#bd91ff 26%,#ba8efd 32%,#bd8dff 33%,#b68eff 37%,#b38aff 45%,#ad8afe 47%,#b286ff 51%,#ab88ff 53%,#a985ff 58%,#a585ff 59%,#a585ff 62%,#a383fe 62%,#a383fe 64%,#a981fe 66%,#9d85ff 67%,#9d83ff 68%,#a67eff 70%,#a67eff 71%,#9e81ff 72%,#9b7efe 78%,#9781ff 79%,#9b7bff 82%,#9a7aff 84%,#937cff 85%,#8e7aff 95%,#8a79fd 97%,#8a78ff 100%);
+        background: -o-linear-gradient(top, #ce9aff 0%,#c995ff 13%,#cb91ff 15%,#c693fa 17%,#c094ff 19%,#c092ff 26%,#bd91ff 26%,#ba8efd 32%,#bd8dff 33%,#b68eff 37%,#b38aff 45%,#ad8afe 47%,#b286ff 51%,#ab88ff 53%,#a985ff 58%,#a585ff 59%,#a585ff 62%,#a383fe 62%,#a383fe 64%,#a981fe 66%,#9d85ff 67%,#9d83ff 68%,#a67eff 70%,#a67eff 71%,#9e81ff 72%,#9b7efe 78%,#9781ff 79%,#9b7bff 82%,#9a7aff 84%,#937cff 85%,#8e7aff 95%,#8a79fd 97%,#8a78ff 100%);
+        background: -ms-linear-gradient(top, #ce9aff 0%,#c995ff 13%,#cb91ff 15%,#c693fa 17%,#c094ff 19%,#c092ff 26%,#bd91ff 26%,#ba8efd 32%,#bd8dff 33%,#b68eff 37%,#b38aff 45%,#ad8afe 47%,#b286ff 51%,#ab88ff 53%,#a985ff 58%,#a585ff 59%,#a585ff 62%,#a383fe 62%,#a383fe 64%,#a981fe 66%,#9d85ff 67%,#9d83ff 68%,#a67eff 70%,#a67eff 71%,#9e81ff 72%,#9b7efe 78%,#9781ff 79%,#9b7bff 82%,#9a7aff 84%,#937cff 85%,#8e7aff 95%,#8a79fd 97%,#8a78ff 100%);
+        background: linear-gradient(to bottom, #ce9aff 0%,#c995ff 13%,#cb91ff 15%,#c693fa 17%,#c094ff 19%,#c092ff 26%,#bd91ff 26%,#ba8efd 32%,#bd8dff 33%,#b68eff 37%,#b38aff 45%,#ad8afe 47%,#b286ff 51%,#ab88ff 53%,#a985ff 58%,#a585ff 59%,#a585ff 62%,#a383fe 62%,#a383fe 64%,#a981fe 66%,#9d85ff 67%,#9d83ff 68%,#a67eff 70%,#a67eff 71%,#9e81ff 72%,#9b7efe 78%,#9781ff 79%,#9b7bff 82%,#9a7aff 84%,#937cff 85%,#8e7aff 95%,#8a79fd 97%,#8a78ff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce9aff', endColorstr='#8a78ff',GradientType=0 );
+
+        ul {
+            padding: 5px 10px;
+
+            li {
+                font-size: 1.4em;
+                border-bottom: 1px solid #9E04FF;
+                padding: 5px;
+                position: relative;
+
+                ul {
+                    background-image: url(imgs/arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: 5px 15px;
+                    display: none;
+                    position: absolute;
+                    top: -5px;
+                    left: 190px;
+                    background-color: #b5aaff;
+                    border-radius: 10px;
+                    padding: 5px;
+                    padding-left: 20px;
+                    text-align: center;
+
+                    li {
+                        width: 180px;
+                        font-size: 0.8em;
+                    }
+                }
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    border: 1px solid #9D00FF;
+                    border-radius: 5px;
+
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

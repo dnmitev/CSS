@@ -1,0 +1,87 @@
+@mixin linear-gradient( $top-color,$top-pos, $bottom-color, $bottom-pos ) {
+    background: $top-color;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMmQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2QxZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, $top-color $top-pos, $bottom-color $bottom-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($top-pos,$top-color), color-stop($bottom-pos,$bottom-color));
+    background: -webkit-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: -o-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: -ms-linear-gradient(top, $top-color $top-pos,$bottom-color $bottom-pos);
+    background: linear-gradient(to bottom, $top-color $top-pos,$bottom-color $bottom-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
+}
+
+@mixin clearfix {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+body,
+html,
+div,
+ul,
+li,
+a,
+table,
+th,
+td,
+tr {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    font-size: 16px;
+    padding: 15px;
+}
+
+#wrapper {
+    width: 350px;
+    height: 230px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    .tab-strip {
+        list-style-type: none;
+
+        & > li {
+            display: inline-block;
+            width: 85px;
+            height: 35px;
+            margin: 0 auto;
+            position: relative;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+
+        & > li:not(.current) {
+            border: 1px solid black;
+            border-radius: 5px;
+            @include linear-gradient(#E8E8E8,0,#BBBBBB,100%);
+
+            .tab-content {
+                display: none;
+            }
+        }
+
+        .tab-content {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            width: inherit;
+        }
+
+        .current {
+            font-weight: bold;
+        }
+    }
+}
