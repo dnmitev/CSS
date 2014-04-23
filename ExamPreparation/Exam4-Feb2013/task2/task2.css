@@ -1,0 +1,54 @@
+html, body, div, ul, li, a, img, span {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 16px;
+  color: black; }
+
+#wrapper {
+  width: 960px; }
+  #wrapper > div {
+    margin-top: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    zoom: 1; }
+    #wrapper > div:after {
+      content: "";
+      display: block;
+      clear: both;
+      height: 0; }
+    #wrapper > div div {
+      border-radius: 5px; }
+      #wrapper > div div.holder {
+        float: left;
+        width: 550px;
+        margin-right: 15px; }
+        #wrapper > div div.holder img {
+          width: 100%;
+          border-radius: 5px; }
+      #wrapper > div div.playlist ul {
+        list-style-type: none; }
+        #wrapper > div div.playlist ul li {
+          display: block;
+          border-bottom: 1px solid black;
+          margin-left: 560px;
+          width: 120px;
+          padding: 5px 0;
+          text-align: center; }
+          #wrapper > div div.playlist ul li a {
+            text-decoration: none;
+            color: black; }
+            #wrapper > div div.playlist ul li a:hover {
+              text-decoration: underline; }
+            #wrapper > div div.playlist ul li a img {
+              display: block;
+              border-radius: 10px;
+              margin: 0 auto; }
+            #wrapper > div div.playlist ul li a span {
+              font-weight: bold; }
+
