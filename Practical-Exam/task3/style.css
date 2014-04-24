@@ -1,0 +1,86 @@
+html, body, div, ul, li, h1, strong, button, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Times New Roman';
+}
+
+#root {
+    width: 700px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#large {
+    border: 2px solid #999999;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+    #large > img {
+        border: 2px solid #999999;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+#list {
+    float: left;
+    border: 2px solid #999999;
+    height: 400px;
+    width: 195px;
+    text-align: center;
+}
+
+    #list strong.title {
+        display: block;
+        font-size: 1.5em;
+        margin: 5px;
+    }
+
+    #list button {
+        display: inline-block;
+        background: #ccc;
+        border: 2px solid #999;
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
+        #list button:hover {
+            background: #E6E6E6;
+        }
+
+    #list ul {
+        overflow-y: scroll;
+        height: 300px;
+        padding: 5px;
+    }
+
+        #list ul li {
+            padding: 5px;
+            border-bottom: 2px solid #999999;
+        }
+
+            #list ul li.current {
+                background: #CCCCCC;
+                border-radius: 5px;
+            }
+
+                #list ul li.current img {
+                    width: 65px;
+                }
+
+            #list ul li:last-of-type {
+                border: none;
+            }
+
+            #list ul li img {
+                width: 100px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 10px;
+            }

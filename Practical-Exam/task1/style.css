@@ -1,0 +1,79 @@
+html, body, header, div, ul, li, nav, a, h1, article {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html, body {
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#archive ul {
+    list-style-type: none;
+    float: right;
+}
+
+    #archive ul li {
+        display: inline-block;
+    }
+
+        #archive ul li a {
+            color: black;
+            padding: 5px;
+            font-size: 10px;
+        }
+
+#header {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+    #header #nav ul {
+        background: url("images/topnav_divider.png");
+        background-repeat: repeat-x;
+        padding: 20px 50px;
+    }
+
+        #header #nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+            #header #nav ul li a {
+                color: #fff;
+                font-size: 18px;
+            }
+
+            #header #nav ul li:first-letter {
+                text-transform: capitalize;
+            }
+
+    #header h1 {
+        font-size: 28px;
+        color: #fff;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+#content {
+    padding: 6px;
+}
+
+    #content h1 {
+        font-size: 24px;
+    }
+
+    #content p {
+        text-align: justify;
+    }

@@ -1,0 +1,86 @@
+html, body, div, ul, li, img, a {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-size: 16px;
+}
+
+#wrapper {
+    width: 960px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+    #wrapper .menu {
+        display: block;
+        /*position: relative;*/
+        width: 170px;
+    }
+
+        #wrapper .menu > li {
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            background: #B6FF00;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+            #wrapper .menu > li > a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #wrapper .menu > li:hover {
+                text-decoration: underline;
+            }
+
+                #wrapper .menu > li:hover .content {
+                    display: block;
+                }
+
+        #wrapper .menu .content {
+            position: relative;
+            display: none;
+            left: 150px;
+            top: -30px;
+        }
+
+            #wrapper .menu .content ul.sub-menu {
+                position: absolute;
+                width: 540px;
+            }
+
+                #wrapper .menu .content ul.sub-menu > li {
+                    background: #008000;
+                    border: none;
+                    border-radius: 10px;
+                    display: block;
+                    padding: 20px 20px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                    #wrapper .menu .content ul.sub-menu > li a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                        #wrapper .menu .content ul.sub-menu > li a:hover {
+                            text-decoration: underline;
+                        }
+
+                            #wrapper .menu .content ul.sub-menu > li a:hover + img {
+                                display: block;
+                            }
+
+                    #wrapper .menu .content ul.sub-menu > li img {
+                        display: none;
+                        border: none;
+                        border-radius: 10px;
+                        margin: 10px auto 0 auto;
+                        width: 100%;
+                    }
